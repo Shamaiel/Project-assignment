@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        #parent{
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+        }
+        #parent >div{
+           
+            margin: 20px;
+            padding-left: 50px;
+        }
+        #parent >div>div{
+            display:flex;
+            
+        }
+        p:first-child{
+            padding-right: 10px;
+        }
+        p:nth-child(2){
+            padding-right: 10px;
+            text-decoration: line-through;
+        }
+        .change{
+            color: green;
+        }
+    </Style>
+</head>
+<body>
+    <div id="parent">
+        <div>
+           <img src="https://m.media-amazon.com/images/I/61eMJalktNL._UY741_.jpg" alt="shopping"> 
+           <h3>Pause</h3>
+           <p>Men Cotton Long Sleeves Shrug </p>
+           <div>
+            <p>₹ 359</p>
+            <p>₹ 1499</p>
+            <p class="change">-76%</p>
+           </div>
+        </div>
+        <div>
+           <img src="https://static.cilory.com/558813-thickbox_default/navy-puffer-sleeveless-jacket-by-grunt.jpg" alt="shopping"> 
+           <h3>JUBINATION</h3>
+           <p>Mens Wools Sleeveless Sweater Pack of 1</p>
+           <div>
+            <p>₹ 799</p>
+            <p>₹ 1499</p>
+            <p class="change">-47%</p>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
